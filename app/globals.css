@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+
+
+/* Custom styles for Contact Section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Adjusting the gray tone */
+}
+
+.text-blue-500 {
+  color: #1e40af; /* Blue color for links */
+}
+
+.text-blue-500:hover {
+  color: #2563eb; /* Darker blue for hover effect */
+}
+
+.space-x-4 {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2563eb; /* Slightly darker blue on hover */
+}
+
+textarea {
+  min-height: 120px;
+}
+
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2);
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #2563eb;
+}
+
+.md\:w-1\/2 {
+  width: 50%;
+}
+
+.md\:ml-8 {
+  margin-left: 2rem;
+}
+
+.md\:mt-0 {
+  margin-top: 0;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.space-y-4 {
+  margin-bottom: 1rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
